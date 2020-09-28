@@ -23,3 +23,27 @@ for (let anchor of anchors) {
     });
   });
 }
+// Burger handler
+(function () {
+  const burgerItem = document.querySelector(".burito");
+  const menu = document.querySelector(".header__burger_back");
+  const menuCloseItem = document.querySelector(".header__burger_back-close");
+  burgerItem.addEventListener("click", () => {
+    menu.classList.add("header__burger_back-active");
+  });
+  menuCloseItem.addEventListener("click", () => {
+    menu.classList.remove("header__burger_back-active");
+  });
+})();
+// (function () {
+//   const burgerItem = document.querySelector(".burger");
+//   console.log(burgerItem);
+//   const menu = document.querySelector(".header__burger_back");
+//   const menuCloseItem = document.querySelector(".header__nav-close");
+//   burgerItem.addEventListener("click", () => {
+//     menu.classList.add("header__nav_active");
+//   });
+//   menuCloseItem.addEventListener("click", () => {
+//     menu.classList.remove("header__nav_active");
+//   });
+// })();
